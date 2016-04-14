@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524131A31CBBD96100D703A6 /* AppDelegate.swift */; };
+		524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A41CBBD96100D703A6 /* LaunchScreen.storyboard */; };
+		524131B01CBBD96100D703A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A51CBBD96100D703A6 /* Main.storyboard */; };
+		524131C91CBBDA4A00D703A6 /* ZEHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524131C81CBBDA4A00D703A6 /* ZEHomeViewController.swift */; };
+		524131CB1CBBDA6C00D703A6 /* ZEHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524131CA1CBBDA6C00D703A6 /* ZEHomeModel.swift */; };
+		524131CD1CBBE2F100D703A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524131CC1CBBE2F100D703A6 /* Assets.xcassets */; };
+		52687F351CBFC99F00C38EA5 /* ZEPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F291CBFC99F00C38EA5 /* ZEPageViewController.swift */; };
+		52687F361CBFC99F00C38EA5 /* ZETableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F2A1CBFC99F00C38EA5 /* ZETableViewController.swift */; };
+		52687F381CBFC99F00C38EA5 /* ZECell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F2E1CBFC99F00C38EA5 /* ZECell.swift */; };
+		52687F391CBFC99F00C38EA5 /* ZECell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52687F2F1CBFC99F00C38EA5 /* ZECell.xib */; };
+		52687F3A1CBFC99F00C38EA5 /* ZEHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F301CBFC99F00C38EA5 /* ZEHeaderView.swift */; };
+		52687F3B1CBFC99F00C38EA5 /* ZEHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52687F311CBFC99F00C38EA5 /* ZEHeaderView.xib */; };
+		52687F3C1CBFC99F00C38EA5 /* ZEMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F321CBFC99F00C38EA5 /* ZEMenuView.swift */; };
+		52687F3D1CBFC99F00C38EA5 /* ZETopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F331CBFC99F00C38EA5 /* ZETopView.swift */; };
+		52687F3E1CBFC99F00C38EA5 /* ZETopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52687F341CBFC99F00C38EA5 /* ZETopView.xib */; };
+		52687F401CBFD04600C38EA5 /* ZEIdentifreHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F3F1CBFD04600C38EA5 /* ZEIdentifreHeader.swift */; };
+		52687F481CBFD23100C38EA5 /* ZEPageConrolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F471CBFD23100C38EA5 /* ZEPageConrolMacro.swift */; };
+		CE103DB747624880DBC52E54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CA53081DAF9F649760FEA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017A3456417BEC410C35098D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1AF093CAE6281D9F5AE5BE35 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		524131881CBBD8A900D703A6 /* ZENote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		524131971CBBD8A900D703A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524131A31CBBD96100D703A6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		524131A41CBBD96100D703A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		524131A51CBBD96100D703A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		524131C81CBBDA4A00D703A6 /* ZEHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHomeViewController.swift; sourceTree = "<group>"; };
+		524131CA1CBBDA6C00D703A6 /* ZEHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHomeModel.swift; sourceTree = "<group>"; };
+		524131CC1CBBE2F100D703A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52687F291CBFC99F00C38EA5 /* ZEPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPageViewController.swift; sourceTree = "<group>"; };
+		52687F2A1CBFC99F00C38EA5 /* ZETableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableViewController.swift; sourceTree = "<group>"; };
+		52687F2E1CBFC99F00C38EA5 /* ZECell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZECell.swift; sourceTree = "<group>"; };
+		52687F2F1CBFC99F00C38EA5 /* ZECell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZECell.xib; sourceTree = "<group>"; };
+		52687F301CBFC99F00C38EA5 /* ZEHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHeaderView.swift; sourceTree = "<group>"; };
+		52687F311CBFC99F00C38EA5 /* ZEHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZEHeaderView.xib; sourceTree = "<group>"; };
+		52687F321CBFC99F00C38EA5 /* ZEMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEMenuView.swift; sourceTree = "<group>"; };
+		52687F331CBFC99F00C38EA5 /* ZETopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETopView.swift; sourceTree = "<group>"; };
+		52687F341CBFC99F00C38EA5 /* ZETopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZETopView.xib; sourceTree = "<group>"; };
+		52687F3F1CBFD04600C38EA5 /* ZEIdentifreHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEIdentifreHeader.swift; sourceTree = "<group>"; };
+		52687F411CBFD09B00C38EA5 /* ZENote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZENote-Bridging-Header.h"; sourceTree = "<group>"; };
+		52687F461CBFD0DF00C38EA5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		52687F471CBFD23100C38EA5 /* ZEPageConrolMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPageConrolMacro.swift; sourceTree = "<group>"; };
+		6F1CA53081DAF9F649760FEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524131851CBBD8A900D703A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE103DB747624880DBC52E54 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFF4EF2AB31459799FBF4D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CA53081DAF9F649760FEA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5241317F1CBBD8A900D703A6 = {
+			isa = PBXGroup;
+			children = (
+				5241318A1CBBD8A900D703A6 /* ZENote */,
+				524131891CBBD8A900D703A6 /* Products */,
+				6409F771295E4A6BAB6848A5 /* Pods */,
+				0AFF4EF2AB31459799FBF4D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		524131891CBBD8A900D703A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524131881CBBD8A900D703A6 /* ZENote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5241318A1CBBD8A900D703A6 /* ZENote */ = {
+			isa = PBXGroup;
+			children = (
+				5241319D1CBBD96100D703A6 /* Class */,
+				524131971CBBD8A900D703A6 /* Info.plist */,
+				524131CC1CBBE2F100D703A6 /* Assets.xcassets */,
+			);
+			path = ZENote;
+			sourceTree = "<group>";
+		};
+		5241319D1CBBD96100D703A6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				524131AD1CBBD96100D703A6 /* Vendors */,
+				5241319E1CBBD96100D703A6 /* General */,
+				5241319F1CBBD96100D703A6 /* Helpers */,
+				524131A01CBBD96100D703A6 /* Macro */,
+				524131A11CBBD96100D703A6 /* Models */,
+				524131A21CBBD96100D703A6 /* Root */,
+				524131A71CBBD96100D703A6 /* Scenes */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5241319E1CBBD96100D703A6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5241319F1CBBD96100D703A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		524131A01CBBD96100D703A6 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				52687F471CBFD23100C38EA5 /* ZEPageConrolMacro.swift */,
+				52687F3F1CBFD04600C38EA5 /* ZEIdentifreHeader.swift */,
+				52687F411CBFD09B00C38EA5 /* ZENote-Bridging-Header.h */,
+				52687F461CBFD0DF00C38EA5 /* PrefixHeader.pch */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		524131A11CBBD96100D703A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		524131A21CBBD96100D703A6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				524131A31CBBD96100D703A6 /* AppDelegate.swift */,
+				524131A41CBBD96100D703A6 /* LaunchScreen.storyboard */,
+				524131A51CBBD96100D703A6 /* Main.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		524131A71CBBD96100D703A6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				524131A81CBBD96100D703A6 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		524131A81CBBD96100D703A6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				524131A91CBBD96100D703A6 /* Controller */,
+				524131AA1CBBD96100D703A6 /* Model */,
+				524131AB1CBBD96100D703A6 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		524131A91CBBD96100D703A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				524131C81CBBDA4A00D703A6 /* ZEHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		524131AA1CBBD96100D703A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524131CA1CBBDA6C00D703A6 /* ZEHomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		524131AB1CBBD96100D703A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524131AD1CBBD96100D703A6 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				52687F271CBFC99F00C38EA5 /* ZEPageView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		52687F271CBFC99F00C38EA5 /* ZEPageView */ = {
+			isa = PBXGroup;
+			children = (
+				52687F281CBFC99F00C38EA5 /* Controller */,
+				52687F2B1CBFC99F00C38EA5 /* Model */,
+				52687F2D1CBFC99F00C38EA5 /* View */,
+			);
+			path = ZEPageView;
+			sourceTree = "<group>";
+		};
+		52687F281CBFC99F00C38EA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52687F291CBFC99F00C38EA5 /* ZEPageViewController.swift */,
+				52687F2A1CBFC99F00C38EA5 /* ZETableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52687F2B1CBFC99F00C38EA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52687F2D1CBFC99F00C38EA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52687F2E1CBFC99F00C38EA5 /* ZECell.swift */,
+				52687F2F1CBFC99F00C38EA5 /* ZECell.xib */,
+				52687F301CBFC99F00C38EA5 /* ZEHeaderView.swift */,
+				52687F311CBFC99F00C38EA5 /* ZEHeaderView.xib */,
+				52687F321CBFC99F00C38EA5 /* ZEMenuView.swift */,
+				52687F331CBFC99F00C38EA5 /* ZETopView.swift */,
+				52687F341CBFC99F00C38EA5 /* ZETopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6409F771295E4A6BAB6848A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AF093CAE6281D9F5AE5BE35 /* Pods.debug.xcconfig */,
+				017A3456417BEC410C35098D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524131871CBBD8A900D703A6 /* ZENote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5241319A1CBBD8A900D703A6 /* Build configuration list for PBXNativeTarget "ZENote" */;
+			buildPhases = (
+				A1860A5B3D9D7490DB0685C0 /* Check Pods Manifest.lock */,
+				524131841CBBD8A900D703A6 /* Sources */,
+				524131851CBBD8A900D703A6 /* Frameworks */,
+				524131861CBBD8A900D703A6 /* Resources */,
+				7D74803FC4D5F3562C0DC6A1 /* Embed Pods Frameworks */,
+				8D05E569F77303C2B91678B2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZENote;
+			productName = ZENote;
+			productReference = 524131881CBBD8A900D703A6 /* ZENote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524131801CBBD8A900D703A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "胡春源";
+				TargetAttributes = {
+					524131871CBBD8A900D703A6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 524131831CBBD8A900D703A6 /* Build configuration list for PBXProject "ZENote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5241317F1CBBD8A900D703A6;
+			productRefGroup = 524131891CBBD8A900D703A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524131871CBBD8A900D703A6 /* ZENote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		524131861CBBD8A900D703A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524131B01CBBD96100D703A6 /* Main.storyboard in Resources */,
+				524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */,
+				52687F391CBFC99F00C38EA5 /* ZECell.xib in Resources */,
+				52687F3E1CBFC99F00C38EA5 /* ZETopView.xib in Resources */,
+				524131CD1CBBE2F100D703A6 /* Assets.xcassets in Resources */,
+				52687F3B1CBFC99F00C38EA5 /* ZEHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D74803FC4D5F3562C0DC6A1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D05E569F77303C2B91678B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1860A5B3D9D7490DB0685C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524131841CBBD8A900D703A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52687F3A1CBFC99F00C38EA5 /* ZEHeaderView.swift in Sources */,
+				52687F361CBFC99F00C38EA5 /* ZETableViewController.swift in Sources */,
+				52687F351CBFC99F00C38EA5 /* ZEPageViewController.swift in Sources */,
+				524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */,
+				52687F381CBFC99F00C38EA5 /* ZECell.swift in Sources */,
+				52687F401CBFD04600C38EA5 /* ZEIdentifreHeader.swift in Sources */,
+				524131CB1CBBDA6C00D703A6 /* ZEHomeModel.swift in Sources */,
+				52687F481CBFD23100C38EA5 /* ZEPageConrolMacro.swift in Sources */,
+				52687F3D1CBFC99F00C38EA5 /* ZETopView.swift in Sources */,
+				524131C91CBBDA4A00D703A6 /* ZEHomeViewController.swift in Sources */,
+				52687F3C1CBFC99F00C38EA5 /* ZEMenuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		524131981CBBD8A900D703A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		524131991CBBD8A900D703A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5241319B1CBBD8A900D703A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF093CAE6281D9F5AE5BE35 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZENote/Class/Macro/PrefixHeader.pch";
+				INFOPLIST_FILE = ZENote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lafree.www.ZENote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZENote/Class/Macro/ZENote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5241319C1CBBD8A900D703A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017A3456417BEC410C35098D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZENote/Class/Macro/PrefixHeader.pch";
+				INFOPLIST_FILE = ZENote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lafree.www.ZENote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZENote/Class/Macro/ZENote-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524131831CBBD8A900D703A6 /* Build configuration list for PBXProject "ZENote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524131981CBBD8A900D703A6 /* Debug */,
+				524131991CBBD8A900D703A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5241319A1CBBD8A900D703A6 /* Build configuration list for PBXNativeTarget "ZENote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5241319B1CBBD8A900D703A6 /* Debug */,
+				5241319C1CBBD8A900D703A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524131801CBBD8A900D703A6 /* Project object */;
+}
