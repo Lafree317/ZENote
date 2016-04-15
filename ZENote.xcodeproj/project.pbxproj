@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520AE6151CC0783900532C55 /* ZENewTimeLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE6141CC0783900532C55 /* ZENewTimeLineHeaderView.swift */; };
+		520AE6171CC0784800532C55 /* ZENewTimeLineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520AE6161CC0784800532C55 /* ZENewTimeLineHeaderView.xib */; };
+		520AE6191CC07B7600532C55 /* ZETableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE6181CC07B7600532C55 /* ZETableModel.swift */; };
+		520AE61F1CC0A1AB00532C55 /* ZETableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE61E1CC0A1AB00532C55 /* ZETableDataSource.swift */; };
+		520AE6211CC0A4CC00532C55 /* ZETableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE6201CC0A4CC00532C55 /* ZETableViewDelegate.swift */; };
 		524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524131A31CBBD96100D703A6 /* AppDelegate.swift */; };
 		524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A41CBBD96100D703A6 /* LaunchScreen.storyboard */; };
 		524131B01CBBD96100D703A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A51CBBD96100D703A6 /* Main.storyboard */; };
@@ -30,6 +35,11 @@
 /* Begin PBXFileReference section */
 		017A3456417BEC410C35098D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1AF093CAE6281D9F5AE5BE35 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		520AE6141CC0783900532C55 /* ZENewTimeLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewTimeLineHeaderView.swift; sourceTree = "<group>"; };
+		520AE6161CC0784800532C55 /* ZENewTimeLineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZENewTimeLineHeaderView.xib; sourceTree = "<group>"; };
+		520AE6181CC07B7600532C55 /* ZETableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableModel.swift; sourceTree = "<group>"; };
+		520AE61E1CC0A1AB00532C55 /* ZETableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableDataSource.swift; sourceTree = "<group>"; };
+		520AE6201CC0A4CC00532C55 /* ZETableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableViewDelegate.swift; sourceTree = "<group>"; };
 		524131881CBBD8A900D703A6 /* ZENote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524131971CBBD8A900D703A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524131A31CBBD96100D703A6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 		524131AD1CBBD96100D703A6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				52917C251CC0E97C0018CB58 /* ZEFile */,
 				52687F271CBFC99F00C38EA5 /* ZEPageView */,
 			);
 			path = Vendors;
@@ -210,8 +221,8 @@
 		52687F271CBFC99F00C38EA5 /* ZEPageView */ = {
 			isa = PBXGroup;
 			children = (
-				52687F281CBFC99F00C38EA5 /* Controller */,
 				52687F2B1CBFC99F00C38EA5 /* Model */,
+				52687F281CBFC99F00C38EA5 /* Controller */,
 				52687F2D1CBFC99F00C38EA5 /* View */,
 			);
 			path = ZEPageView;
@@ -229,6 +240,9 @@
 		52687F2B1CBFC99F00C38EA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				520AE6181CC07B7600532C55 /* ZETableModel.swift */,
+				520AE61E1CC0A1AB00532C55 /* ZETableDataSource.swift */,
+				520AE6201CC0A4CC00532C55 /* ZETableViewDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,8 +257,17 @@
 				52687F321CBFC99F00C38EA5 /* ZEMenuView.swift */,
 				52687F331CBFC99F00C38EA5 /* ZETopView.swift */,
 				52687F341CBFC99F00C38EA5 /* ZETopView.xib */,
+				520AE6141CC0783900532C55 /* ZENewTimeLineHeaderView.swift */,
+				520AE6161CC0784800532C55 /* ZENewTimeLineHeaderView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		52917C251CC0E97C0018CB58 /* ZEFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZEFile;
 			sourceTree = "<group>";
 		};
 		6409F771295E4A6BAB6848A5 /* Pods */ = {
@@ -318,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524131B01CBBD96100D703A6 /* Main.storyboard in Resources */,
+				520AE6171CC0784800532C55 /* ZENewTimeLineHeaderView.xib in Resources */,
 				524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */,
 				52687F391CBFC99F00C38EA5 /* ZECell.xib in Resources */,
 				52687F3E1CBFC99F00C38EA5 /* ZETopView.xib in Resources */,
@@ -381,12 +405,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520AE6191CC07B7600532C55 /* ZETableModel.swift in Sources */,
 				52687F3A1CBFC99F00C38EA5 /* ZEHeaderView.swift in Sources */,
 				52687F361CBFC99F00C38EA5 /* ZETableViewController.swift in Sources */,
 				52687F351CBFC99F00C38EA5 /* ZEPageViewController.swift in Sources */,
+				520AE61F1CC0A1AB00532C55 /* ZETableDataSource.swift in Sources */,
 				524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */,
+				520AE6151CC0783900532C55 /* ZENewTimeLineHeaderView.swift in Sources */,
 				52687F381CBFC99F00C38EA5 /* ZECell.swift in Sources */,
 				52687F401CBFD04600C38EA5 /* ZEIdentifreHeader.swift in Sources */,
+				520AE6211CC0A4CC00532C55 /* ZETableViewDelegate.swift in Sources */,
 				524131CB1CBBDA6C00D703A6 /* ZEHomeModel.swift in Sources */,
 				52687F481CBFD23100C38EA5 /* ZEPageConrolMacro.swift in Sources */,
 				52687F3D1CBFC99F00C38EA5 /* ZETopView.swift in Sources */,

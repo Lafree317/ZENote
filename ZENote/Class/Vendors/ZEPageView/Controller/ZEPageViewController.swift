@@ -37,6 +37,7 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
         layoutHeaderMenuView()
         layoutTopView()
         
+        
     }
 
     /** 创建底部scrollView,并将tableViewController添加到上面 */
@@ -54,16 +55,20 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
         for  i in 0 ..< titlesArr.count  {
             let floatI = CGFloat(i)
             
-            let tableViewVC = ZETableViewController(style: UITableViewStyle.Plain)
+            let tableViewVC = ZETableViewController(style: UITableViewStyle.Grouped)
+            tableViewVC.tags = titlesArr[i]
+            tableViewVC.delegate = self
+            
+            
+            
+            tableViewVC.view.frame = CGRectMake(floatI * kZEScreenWidth,0, self.view.frame.size.width, kZEScreenHight)
             // tableView顶部流出HeaderView和MenuView的位置
             tableViewVC.tableView.contentInset = UIEdgeInsetsMake(kScrollHorizY, 0, 0, 0 )
-            tableViewVC.delegate = self
-            tableViewVC.view.frame = CGRectMake(floatI * kZEScreenWidth,0, self.view.frame.size.width, kZEScreenHight)
-            tableViewVC.tags = titlesArr[i]
-            
             // 将tableViewVC添加进数组方便管理
             tableViewArr.append(tableViewVC)
             self.addChildViewController(tableViewVC)
+            
+         
         }
         // 需要用到的时候再添加到view上,避免一上来就占用太多资源
         backgroundScrollView?.addSubview(tableViewArr[0].view)

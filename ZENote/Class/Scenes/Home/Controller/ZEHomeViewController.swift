@@ -10,18 +10,24 @@ import UIKit
 
 class ZEHomeViewController: UIViewController {
     let zePageVC = ZEPageViewController()
+    let notification = NSNotificationCenter.defaultCenter()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         layoutZEPageView()
+        
+        
+        
+        // 接收child所有C的segue通知
+        notification.addObserverForName(HomeSegueNotification, object: nil, queue: nil) { (noti) in
+            let dic = noti.valueForKey("userInfo")
+            print(dic)
 
-        
-        
-        
-        // Do any additional setup after loading the view.
+        }
+
     }
     func layoutZEPageView(){
-        zePageVC.titlesArr = ["博客","界面","吐槽"]
+        zePageVC.titlesArr = [menu_blog,menu_UI,menu_status]
         self.addChildViewController(zePageVC)
         hiddenNav(true)
         zePageVC.alphaBlock =  {(alpha) in
