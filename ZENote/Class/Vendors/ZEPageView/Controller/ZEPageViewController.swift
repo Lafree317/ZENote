@@ -24,20 +24,15 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
         super.viewDidAppear(animated)
         // didAppear隐藏,不会让整个页面向上移动64
         self.navigationController?.navigationBar.alpha = 0
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigaionTitle = "轩辕小羽"
         self.automaticallyAdjustsScrollViewInsets = false
-        
         layoutBackgroundScrollView()
         layoutHeaderMenuView()
         layoutTopView()
-        
-        
     }
 
     /** 创建底部scrollView,并将tableViewController添加到上面 */
@@ -57,7 +52,6 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
             
             let tableViewVC = ZETableViewController(style: UITableViewStyle.Grouped)
             tableViewVC.tags = titlesArr[i]
-            tableViewVC.delegate = self
             
             
             
@@ -67,6 +61,7 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
             // 将tableViewVC添加进数组方便管理
             tableViewArr.append(tableViewVC)
             self.addChildViewController(tableViewVC)
+            tableViewVC.delegate = self
             
          
         }
