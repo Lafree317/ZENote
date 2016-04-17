@@ -23,11 +23,11 @@ let HomeSegueNotification = "HomeSegueNotification"
 let NotiOption = "option"
 let NotiSender = "sender"
 
-enum ZETableViewOption:String {
-    case Status_new = "newStatus"
-    case Status_cell = "StatusCellSelct"
-    case Blog_cell = "BlogCellSelct"
-    case UI_cell = "UICellSelct"
+enum ZETableViewOption:Int {
+    case Status_new = 1
+    case Status_cell = 2
+    case Blog_cell = 3
+    case UI_cell = 4
     
  
 }

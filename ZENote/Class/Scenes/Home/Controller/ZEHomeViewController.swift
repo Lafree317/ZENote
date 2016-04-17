@@ -18,18 +18,15 @@ class ZEHomeViewController: UIViewController {
         
         
         
-        // 接收child所有C的segue通知
-        notification.addObserverForName(HomeSegueNotification, object: nil, queue: nil) { (noti) in
-            let dic = noti.valueForKey("userInfo")
-            print(dic)
-
-        }
-
+        
+        
     }
+    
     func layoutZEPageView(){
         zePageVC.titlesArr = [menu_blog,menu_UI,menu_status]
         self.addChildViewController(zePageVC)
         hiddenNav(true)
+        // 回调ZTPage的透明度
         zePageVC.alphaBlock =  {(alpha) in
             if alpha > 0.5 {
                 self.hiddenNav(false)
@@ -39,27 +36,14 @@ class ZEHomeViewController: UIViewController {
             }
         }
         self.view.addSubview(zePageVC.view)
-        
-        
-    }
-    
-    func layoutNavigation(){
-        // 这回回头改成设置按钮
-        // 创建新动态放到吐槽的区头里
-        let button = UIButton(type: .System)
-        button.frame = CGRectMake(0, 0, 44, 44)
-        button.setBackgroundImage(UIImage(named: imageName_camera), forState: .Normal)
-        button.addTarget(self, action: #selector(cameraAction), forControlEvents: .TouchUpInside)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
-    }
-    func cameraAction(){
-        
+        // 接受ZEPage的segue通知
+        notification.addObserver(self, selector: #selector(segueNotification(_:)), name: HomeSegueNotification, object: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // 对状态栏的操作
     func hiddenNav(hidden:Bool){
         if hidden {
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -69,6 +53,32 @@ class ZEHomeViewController: UIViewController {
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
             UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
         }
+    }
+    
+    // 接受ZEPage的segue通知
+    func segueNotification(noti:NSNotification){
+        // 取出通知内的字典
+        let dic = noti.valueForKey("userInfo")!
+        // 类型
+        let option = ZETableViewOption(rawValue:(dic.valueForKey(NotiOption) as! Int))!
+        // 传值
+        let sender = dic.valueForKey(NotiSender)!
+        
+        switch option {
+        case .Status_new:
+            print("新建状态")
+            break
+        case .Status_cell:
+            print("状态cell")
+            break
+        case .UI_cell:
+            print("UICell")
+            break
+        case .Blog_cell:
+            print("blogCell")
+            break
+        }
+        print("传值:" + "\(sender)")
     }
 
     /*
