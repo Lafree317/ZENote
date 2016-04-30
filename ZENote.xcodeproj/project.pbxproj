@@ -11,6 +11,7 @@
 		520AE6171CC0784800532C55 /* ZENewTimeLineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520AE6161CC0784800532C55 /* ZENewTimeLineHeaderView.xib */; };
 		520AE6191CC07B7600532C55 /* ZETableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE6181CC07B7600532C55 /* ZETableModel.swift */; };
 		520AE61F1CC0A1AB00532C55 /* ZETableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE61E1CC0A1AB00532C55 /* ZETableDataSource.swift */; };
+		52216BE31CCA71470084CC7F /* XTStatusCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52216BE21CCA71470084CC7F /* XTStatusCloud.swift */; };
 		524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524131A31CBBD96100D703A6 /* AppDelegate.swift */; };
 		524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A41CBBD96100D703A6 /* LaunchScreen.storyboard */; };
 		524131B01CBBD96100D703A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524131A51CBBD96100D703A6 /* Main.storyboard */; };
@@ -28,6 +29,33 @@
 		52687F3E1CBFC99F00C38EA5 /* ZETopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52687F341CBFC99F00C38EA5 /* ZETopView.xib */; };
 		52687F401CBFD04600C38EA5 /* ZEIdentifreHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F3F1CBFD04600C38EA5 /* ZEIdentifreHeader.swift */; };
 		52687F481CBFD23100C38EA5 /* ZEPageConrolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52687F471CBFD23100C38EA5 /* ZEPageConrolMacro.swift */; };
+		5299B6581CD0C70B00238BCB /* ZENewStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299B6571CD0C70B00238BCB /* ZENewStatusModel.swift */; };
+		529C0B2A1CCB58AA0062757B /* XTStatusMdoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C0B291CCB58AA0062757B /* XTStatusMdoel.swift */; };
+		529C0B2C1CCB592B0062757B /* ZEStatusHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C0B2B1CCB592B0062757B /* ZEStatusHeader.swift */; };
+		529C0B2E1CCB59530062757B /* ZEHelperHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C0B2D1CCB59530062757B /* ZEHelperHeader.swift */; };
+		52F072501CCA58EF00CBB569 /* AlbumToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0723C1CCA58EF00CBB569 /* AlbumToolbarView.swift */; };
+		52F072511CCA58EF00CBB569 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0723D1CCA58EF00CBB569 /* ImageModel.swift */; };
+		52F072521CCA58EF00CBB569 /* NSIndexSet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0723E1CCA58EF00CBB569 /* NSIndexSet+Extension.swift */; };
+		52F072531CCA58EF00CBB569 /* PhotoAlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0723F1CCA58EF00CBB569 /* PhotoAlbumsTableViewController.swift */; };
+		52F072541CCA58EF00CBB569 /* PhotoAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072401CCA58EF00CBB569 /* PhotoAlbumTableViewCell.swift */; };
+		52F072551CCA58EF00CBB569 /* PhotoAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F072411CCA58EF00CBB569 /* PhotoAlbumTableViewCell.xib */; };
+		52F072561CCA58EF00CBB569 /* photoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072421CCA58EF00CBB569 /* photoCollectionViewCell.swift */; };
+		52F072571CCA58EF00CBB569 /* photoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F072431CCA58EF00CBB569 /* photoCollectionViewCell.xib */; };
+		52F072581CCA58EF00CBB569 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072441CCA58EF00CBB569 /* PhotoCollectionViewController.swift */; };
+		52F072591CCA58EF00CBB569 /* PhotoFetchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072451CCA58EF00CBB569 /* PhotoFetchOptions.swift */; };
+		52F0725A1CCA58EF00CBB569 /* PhotoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072461CCA58EF00CBB569 /* PhotoImage.swift */; };
+		52F0725B1CCA58EF00CBB569 /* PhotoImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072471CCA58EF00CBB569 /* PhotoImageManager.swift */; };
+		52F0725C1CCA58EF00CBB569 /* PhotoPickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072481CCA58EF00CBB569 /* PhotoPickerConfig.swift */; };
+		52F0725D1CCA58EF00CBB569 /* PhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072491CCA58EF00CBB569 /* PhotoPickerController.swift */; };
+		52F0725E1CCA58EF00CBB569 /* PhotoPreviewBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724A1CCA58EF00CBB569 /* PhotoPreviewBottomBarView.swift */; };
+		52F0725F1CCA58EF00CBB569 /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724B1CCA58EF00CBB569 /* PhotoPreviewCell.swift */; };
+		52F072601CCA58EF00CBB569 /* PhotoPreviewToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724C1CCA58EF00CBB569 /* PhotoPreviewToolbarView.swift */; };
+		52F072611CCA58EF00CBB569 /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724D1CCA58EF00CBB569 /* PhotoPreviewViewController.swift */; };
+		52F072621CCA58EF00CBB569 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724E1CCA58EF00CBB569 /* UICollectionView+Extension.swift */; };
+		52F072631CCA58EF00CBB569 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0724F1CCA58EF00CBB569 /* UIImage+Extension.swift */; };
+		52F072651CCA59F600CBB569 /* PhotoImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072641CCA59F600CBB569 /* PhotoImageModel.swift */; };
+		52F072671CCA5A0100CBB569 /* ZENewStatusewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072661CCA5A0100CBB569 /* ZENewStatusewController.swift */; };
+		52F072691CCA5A1F00CBB569 /* SinglePhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F072681CCA5A1F00CBB569 /* SinglePhotoPreviewViewController.swift */; };
 		CE103DB747624880DBC52E54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CA53081DAF9F649760FEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +66,7 @@
 		520AE6161CC0784800532C55 /* ZENewTimeLineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZENewTimeLineHeaderView.xib; sourceTree = "<group>"; };
 		520AE6181CC07B7600532C55 /* ZETableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableModel.swift; sourceTree = "<group>"; };
 		520AE61E1CC0A1AB00532C55 /* ZETableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETableDataSource.swift; sourceTree = "<group>"; };
+		52216BE21CCA71470084CC7F /* XTStatusCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTStatusCloud.swift; sourceTree = "<group>"; };
 		524131881CBBD8A900D703A6 /* ZENote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524131971CBBD8A900D703A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524131A31CBBD96100D703A6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +88,33 @@
 		52687F411CBFD09B00C38EA5 /* ZENote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZENote-Bridging-Header.h"; sourceTree = "<group>"; };
 		52687F461CBFD0DF00C38EA5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		52687F471CBFD23100C38EA5 /* ZEPageConrolMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPageConrolMacro.swift; sourceTree = "<group>"; };
+		5299B6571CD0C70B00238BCB /* ZENewStatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewStatusModel.swift; sourceTree = "<group>"; };
+		529C0B291CCB58AA0062757B /* XTStatusMdoel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTStatusMdoel.swift; sourceTree = "<group>"; };
+		529C0B2B1CCB592B0062757B /* ZEStatusHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEStatusHeader.swift; sourceTree = "<group>"; };
+		529C0B2D1CCB59530062757B /* ZEHelperHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHelperHeader.swift; sourceTree = "<group>"; };
+		52F0723C1CCA58EF00CBB569 /* AlbumToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumToolbarView.swift; sourceTree = "<group>"; };
+		52F0723D1CCA58EF00CBB569 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		52F0723E1CCA58EF00CBB569 /* NSIndexSet+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSIndexSet+Extension.swift"; sourceTree = "<group>"; };
+		52F0723F1CCA58EF00CBB569 /* PhotoAlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumsTableViewController.swift; sourceTree = "<group>"; };
+		52F072401CCA58EF00CBB569 /* PhotoAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		52F072411CCA58EF00CBB569 /* PhotoAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAlbumTableViewCell.xib; sourceTree = "<group>"; };
+		52F072421CCA58EF00CBB569 /* photoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoCollectionViewCell.swift; sourceTree = "<group>"; };
+		52F072431CCA58EF00CBB569 /* photoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = photoCollectionViewCell.xib; sourceTree = "<group>"; };
+		52F072441CCA58EF00CBB569 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		52F072451CCA58EF00CBB569 /* PhotoFetchOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFetchOptions.swift; sourceTree = "<group>"; };
+		52F072461CCA58EF00CBB569 /* PhotoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoImage.swift; sourceTree = "<group>"; };
+		52F072471CCA58EF00CBB569 /* PhotoImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoImageManager.swift; sourceTree = "<group>"; };
+		52F072481CCA58EF00CBB569 /* PhotoPickerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerConfig.swift; sourceTree = "<group>"; };
+		52F072491CCA58EF00CBB569 /* PhotoPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerController.swift; sourceTree = "<group>"; };
+		52F0724A1CCA58EF00CBB569 /* PhotoPreviewBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewBottomBarView.swift; sourceTree = "<group>"; };
+		52F0724B1CCA58EF00CBB569 /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
+		52F0724C1CCA58EF00CBB569 /* PhotoPreviewToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewToolbarView.swift; sourceTree = "<group>"; };
+		52F0724D1CCA58EF00CBB569 /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		52F0724E1CCA58EF00CBB569 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		52F0724F1CCA58EF00CBB569 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		52F072641CCA59F600CBB569 /* PhotoImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoImageModel.swift; sourceTree = "<group>"; };
+		52F072661CCA5A0100CBB569 /* ZENewStatusewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewStatusewController.swift; sourceTree = "<group>"; };
+		52F072681CCA5A1F00CBB569 /* SinglePhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePhotoPreviewViewController.swift; sourceTree = "<group>"; };
 		6F1CA53081DAF9F649760FEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +190,7 @@
 		5241319F1CBBD96100D703A6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				52216BE21CCA71470084CC7F /* XTStatusCloud.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -145,6 +202,8 @@
 				52687F3F1CBFD04600C38EA5 /* ZEIdentifreHeader.swift */,
 				52687F411CBFD09B00C38EA5 /* ZENote-Bridging-Header.h */,
 				52687F461CBFD0DF00C38EA5 /* PrefixHeader.pch */,
+				529C0B2B1CCB592B0062757B /* ZEStatusHeader.swift */,
+				529C0B2D1CCB59530062757B /* ZEHelperHeader.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -152,6 +211,7 @@
 		524131A11CBBD96100D703A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				529C0B291CCB58AA0062757B /* XTStatusMdoel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +229,7 @@
 		524131A71CBBD96100D703A6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				52AA4FED1CC3EC6B00C32B71 /* NewStatus */,
 				524131A81CBBD96100D703A6 /* Home */,
 			);
 			path = Scenes;
@@ -210,6 +271,7 @@
 		524131AD1CBBD96100D703A6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				52F0723B1CCA58EF00CBB569 /* core */,
 				52917C251CC0E97C0018CB58 /* ZEFile */,
 				52687F271CBFC99F00C38EA5 /* ZEPageView */,
 			);
@@ -265,6 +327,68 @@
 			children = (
 			);
 			path = ZEFile;
+			sourceTree = "<group>";
+		};
+		52AA4FED1CC3EC6B00C32B71 /* NewStatus */ = {
+			isa = PBXGroup;
+			children = (
+				52AA4FEE1CC3EC6B00C32B71 /* Controller */,
+				52AA4FEF1CC3EC6B00C32B71 /* Model */,
+				52AA4FF01CC3EC6B00C32B71 /* View */,
+			);
+			path = NewStatus;
+			sourceTree = "<group>";
+		};
+		52AA4FEE1CC3EC6B00C32B71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52F072661CCA5A0100CBB569 /* ZENewStatusewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52AA4FEF1CC3EC6B00C32B71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5299B6571CD0C70B00238BCB /* ZENewStatusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52AA4FF01CC3EC6B00C32B71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52F0723B1CCA58EF00CBB569 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				52F072681CCA5A1F00CBB569 /* SinglePhotoPreviewViewController.swift */,
+				52F072641CCA59F600CBB569 /* PhotoImageModel.swift */,
+				52F0723C1CCA58EF00CBB569 /* AlbumToolbarView.swift */,
+				52F0723D1CCA58EF00CBB569 /* ImageModel.swift */,
+				52F0723E1CCA58EF00CBB569 /* NSIndexSet+Extension.swift */,
+				52F0723F1CCA58EF00CBB569 /* PhotoAlbumsTableViewController.swift */,
+				52F072401CCA58EF00CBB569 /* PhotoAlbumTableViewCell.swift */,
+				52F072411CCA58EF00CBB569 /* PhotoAlbumTableViewCell.xib */,
+				52F072421CCA58EF00CBB569 /* photoCollectionViewCell.swift */,
+				52F072431CCA58EF00CBB569 /* photoCollectionViewCell.xib */,
+				52F072441CCA58EF00CBB569 /* PhotoCollectionViewController.swift */,
+				52F072451CCA58EF00CBB569 /* PhotoFetchOptions.swift */,
+				52F072461CCA58EF00CBB569 /* PhotoImage.swift */,
+				52F072471CCA58EF00CBB569 /* PhotoImageManager.swift */,
+				52F072481CCA58EF00CBB569 /* PhotoPickerConfig.swift */,
+				52F072491CCA58EF00CBB569 /* PhotoPickerController.swift */,
+				52F0724A1CCA58EF00CBB569 /* PhotoPreviewBottomBarView.swift */,
+				52F0724B1CCA58EF00CBB569 /* PhotoPreviewCell.swift */,
+				52F0724C1CCA58EF00CBB569 /* PhotoPreviewToolbarView.swift */,
+				52F0724D1CCA58EF00CBB569 /* PhotoPreviewViewController.swift */,
+				52F0724E1CCA58EF00CBB569 /* UICollectionView+Extension.swift */,
+				52F0724F1CCA58EF00CBB569 /* UIImage+Extension.swift */,
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 		6409F771295E4A6BAB6848A5 /* Pods */ = {
@@ -339,9 +463,11 @@
 			files = (
 				524131B01CBBD96100D703A6 /* Main.storyboard in Resources */,
 				520AE6171CC0784800532C55 /* ZENewTimeLineHeaderView.xib in Resources */,
+				52F072551CCA58EF00CBB569 /* PhotoAlbumTableViewCell.xib in Resources */,
 				524131AF1CBBD96100D703A6 /* LaunchScreen.storyboard in Resources */,
 				52687F391CBFC99F00C38EA5 /* ZECell.xib in Resources */,
 				52687F3E1CBFC99F00C38EA5 /* ZETopView.xib in Resources */,
+				52F072571CCA58EF00CBB569 /* photoCollectionViewCell.xib in Resources */,
 				524131CD1CBBE2F100D703A6 /* Assets.xcassets in Resources */,
 				52687F3B1CBFC99F00C38EA5 /* ZEHeaderView.xib in Resources */,
 			);
@@ -402,20 +528,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F072501CCA58EF00CBB569 /* AlbumToolbarView.swift in Sources */,
 				520AE6191CC07B7600532C55 /* ZETableModel.swift in Sources */,
 				52687F3A1CBFC99F00C38EA5 /* ZEHeaderView.swift in Sources */,
 				52687F361CBFC99F00C38EA5 /* ZETableViewController.swift in Sources */,
+				52F0725F1CCA58EF00CBB569 /* PhotoPreviewCell.swift in Sources */,
 				52687F351CBFC99F00C38EA5 /* ZEPageViewController.swift in Sources */,
+				52F072651CCA59F600CBB569 /* PhotoImageModel.swift in Sources */,
+				529C0B2A1CCB58AA0062757B /* XTStatusMdoel.swift in Sources */,
 				520AE61F1CC0A1AB00532C55 /* ZETableDataSource.swift in Sources */,
+				52F072591CCA58EF00CBB569 /* PhotoFetchOptions.swift in Sources */,
+				52F072521CCA58EF00CBB569 /* NSIndexSet+Extension.swift in Sources */,
+				52F072631CCA58EF00CBB569 /* UIImage+Extension.swift in Sources */,
 				524131AE1CBBD96100D703A6 /* AppDelegate.swift in Sources */,
+				52F0725B1CCA58EF00CBB569 /* PhotoImageManager.swift in Sources */,
 				520AE6151CC0783900532C55 /* ZENewTimeLineHeaderView.swift in Sources */,
+				52F072531CCA58EF00CBB569 /* PhotoAlbumsTableViewController.swift in Sources */,
+				529C0B2C1CCB592B0062757B /* ZEStatusHeader.swift in Sources */,
+				52F072611CCA58EF00CBB569 /* PhotoPreviewViewController.swift in Sources */,
 				52687F381CBFC99F00C38EA5 /* ZECell.swift in Sources */,
+				529C0B2E1CCB59530062757B /* ZEHelperHeader.swift in Sources */,
+				52F072691CCA5A1F00CBB569 /* SinglePhotoPreviewViewController.swift in Sources */,
 				52687F401CBFD04600C38EA5 /* ZEIdentifreHeader.swift in Sources */,
+				52F072621CCA58EF00CBB569 /* UICollectionView+Extension.swift in Sources */,
+				52F072511CCA58EF00CBB569 /* ImageModel.swift in Sources */,
+				52F0725D1CCA58EF00CBB569 /* PhotoPickerController.swift in Sources */,
 				524131CB1CBBDA6C00D703A6 /* ZEHomeModel.swift in Sources */,
+				52F0725A1CCA58EF00CBB569 /* PhotoImage.swift in Sources */,
+				52F072601CCA58EF00CBB569 /* PhotoPreviewToolbarView.swift in Sources */,
+				52216BE31CCA71470084CC7F /* XTStatusCloud.swift in Sources */,
+				52F072671CCA5A0100CBB569 /* ZENewStatusewController.swift in Sources */,
 				52687F481CBFD23100C38EA5 /* ZEPageConrolMacro.swift in Sources */,
 				52687F3D1CBFC99F00C38EA5 /* ZETopView.swift in Sources */,
+				52F0725C1CCA58EF00CBB569 /* PhotoPickerConfig.swift in Sources */,
 				524131C91CBBDA4A00D703A6 /* ZEHomeViewController.swift in Sources */,
+				52F072541CCA58EF00CBB569 /* PhotoAlbumTableViewCell.swift in Sources */,
+				52F072581CCA58EF00CBB569 /* PhotoCollectionViewController.swift in Sources */,
+				52F072561CCA58EF00CBB569 /* photoCollectionViewCell.swift in Sources */,
 				52687F3C1CBFC99F00C38EA5 /* ZEMenuView.swift in Sources */,
+				52F0725E1CCA58EF00CBB569 /* PhotoPreviewBottomBarView.swift in Sources */,
+				5299B6581CD0C70B00238BCB /* ZENewStatusModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

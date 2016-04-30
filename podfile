@@ -1,7 +1,8 @@
-pod 'Wilddog'
 pod 'MBProgressHUD'
 pod 'IQKeyboardManager'
 pod 'MJRefresh'
-pod ‘YYText’
+pod ‘YYKit’
 pod 'DateTools'
 pod 'SDWebImage'
+pod 'MLSelectPhoto'
+pod 'LeanCloudSocial'

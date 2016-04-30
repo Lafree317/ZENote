@@ -60,27 +60,36 @@ class ZEHomeViewController: UIViewController {
         // 取出通知内的字典
         let dic = noti.valueForKey("userInfo")!
         // 类型
-        let option = ZETableViewOption(rawValue:(dic.valueForKey(NotiOption) as! Int))!
+        let option = ZETableViewOption(rawValue:(dic.valueForKey(NotiOption) as! String))!
         // 传值
         let sender = dic.valueForKey(NotiSender)!
-        
+        print(option)
         switch option {
         case .Status_new:
-            print("新建状态")
+            self.performSegueWithIdentifier(option.rawValue, sender: sender)
             break
         case .Status_cell:
-            print("状态cell")
+            
             break
         case .UI_cell:
-            print("UICell")
+            
             break
         case .Blog_cell:
-            print("blogCell")
+            
             break
         }
-        print("传值:" + "\(sender)")
+        
     }
-
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.hiddenNav(false)
+        
+        self.navigationController?.navigationBar.alpha = 1
+    }
     /*
     // MARK: - Navigation
 

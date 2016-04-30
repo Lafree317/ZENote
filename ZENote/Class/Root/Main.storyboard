@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -20,10 +21,71 @@
                     </view>
                     <navigationItem key="navigationItem" id="i6I-aV-z3s"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="3b5-SD-TX0" kind="show" identifier="Status_new" id="DZR-dO-fKE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1045.5" y="549.5"/>
+        </scene>
+        <!--New Statusew Controller-->
+        <scene sceneID="WkA-d3-sUT">
+            <objects>
+                <viewController id="3b5-SD-TX0" customClass="ZENewStatusewController" customModule="ZENote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VKJ-vR-4OP"/>
+                        <viewControllerLayoutGuide type="bottom" id="wi4-94-QGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTI-nN-y4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-Bu-uRD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hzp-04-byr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ngy-Bu-uRD" firstAttribute="top" secondItem="VKJ-vR-4OP" secondAttribute="bottom" id="2rk-dZ-Gkf"/>
+                            <constraint firstItem="ngy-Bu-uRD" firstAttribute="leading" secondItem="KTI-nN-y4t" secondAttribute="leading" id="6Y5-Q7-315"/>
+                            <constraint firstItem="ngy-Bu-uRD" firstAttribute="height" secondItem="KTI-nN-y4t" secondAttribute="height" multiplier="1:4" id="Q8u-IT-Kqx"/>
+                            <constraint firstAttribute="trailing" secondItem="ngy-Bu-uRD" secondAttribute="trailing" id="kdS-Vb-PjU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Q8u-IT-Kqx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="q7h-wO-H5X">
+                        <barButtonItem key="leftBarButtonItem" title="取消" style="done" id="uGI-ib-KW1">
+                            <connections>
+                                <action selector="leftAction:" destination="3b5-SD-TX0" id="MvS-yZ-n0X"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="发布" style="done" id="alP-9D-YAc">
+                            <color key="tintColor" red="0.39607843139999999" green="0.59607843140000005" blue="0.28827477301409404" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="rightAction:" destination="3b5-SD-TX0" id="5c0-Zh-OQa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="ngy-Bu-uRD" id="xIh-2v-QNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVP-PP-je7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.5" y="549.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwW-nw-qzw">

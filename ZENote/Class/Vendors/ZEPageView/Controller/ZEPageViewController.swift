@@ -20,10 +20,16 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
     var scrollX:CGFloat = 0// 记录当偏移量
     var navigaionTitle: String? // title
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        // didAppear隐藏,不会让整个页面向上移动64
-        self.navigationController?.navigationBar.alpha = 0
+        // didAppear隐藏,不会让整个页面向上移动64,但是动画稍微有点蛋疼
+        hiddenNavi(0)
+        
     }
     
     override func viewDidLoad() {
@@ -119,12 +125,28 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
         // 将scrollY的值同步
         scrollY = tableviewScrollY
         
+        hiddenNavi(seleoffSetY)
+
+    }
+    /**
+     根据scrollY,和seleoffSetY计算当前应该显示哪种状态的Navi
+     TBVC代理方法和viewdidsppear都会调用
+     
+     - parameter seleoffSetY: 每次改变的值
+     */
+    func hiddenNavi(seleoffSetY:CGFloat){
+        
+        var alpha:CGFloat = 1;
         // 偏移量超出Navigation之上
         if scrollY >= -kZEMenuHight-kNavigationHight {
             headerMenuViewShowType(.up)
+            alpha = 1;
+   
         }else if  scrollY <= -kScrollHorizY {
             // 偏移量超出Navigation之下
             headerMenuViewShowType(.buttom)
+            alpha = 0;
+            
         }else{
             // 剩下的只有需要跟随的情况了
             // 将headerView的y值按照偏移量更改
@@ -135,15 +157,10 @@ class ZEPageViewController: UIViewController,UIScrollViewDelegate,ZETableViewCon
             // 计算当前的值..除数...分子..
             let nowY = scrollY + kZEMenuHight+kNavigationHight
             // 一个0-1的值
-            let nowAlpa = 1+nowY/datumLine
-            
-            alphaBlock(alpha: nowAlpa)
-            
-            // 以0.5为基础 改变字体和状态栏的颜色
-
-            self.navigationController?.navigationBar.alpha = nowAlpa
+            alpha = 1+nowY/datumLine;
         }
-        
+        self.navigationController?.navigationBar.alpha = alpha;
+        alphaBlock(alpha: alpha)
     }
     func menuViewSelectIndex(index: Int) {
         // 0.3秒的动画为了显得不太突兀
